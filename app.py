@@ -7,7 +7,7 @@ import atexit
 app = Flask(__name__)
 db = Database()
 
-# 애플리케이션 종료 시 DB 연결 종료   
+# 애플리케이션 종료 시 DB 연결 종료     
 atexit.register(db.close)
 
 @app.route('/', methods=['GET'])
